@@ -4,3 +4,8 @@ git config --global user.email "eric.hcshen@gmail.com"
 git remote add origin https://github.com/eric-hcshen/my-repo
 git pull origin master
 git clone https://github.com/eric-hcshen/the-unix-workbench.git
+
+
+
+docker pull jupyter/all-spark-notebook
+docker run -d -p 8888:8888 --name notebook jupyter/all-spark-notebook
