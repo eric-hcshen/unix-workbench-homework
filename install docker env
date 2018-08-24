@@ -1,0 +1,7 @@
+2018/8/24
+#get liux version
+lsb_release -cs
+#prepare repository
+https://docs.docker.com/install/linux/docker-ce/ubuntu/
+#install docker
+apt install docker.io
