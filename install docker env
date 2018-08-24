@@ -10,3 +10,7 @@ docker pull jupyter/all-spark-notebook
 docker run -d -p 80:8888 --name notebook jupyter/all-spark-notebook
 #connect to notebook from browser
 http://142.93.252.198?token=501a35e40b89fc6cebb1172872205569bc2caf4d0259aff6
+#install python
+apt-get install python
+#install pip
+apt install python-pip
