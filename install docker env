@@ -5,3 +5,8 @@ lsb_release -cs
 https://docs.docker.com/install/linux/docker-ce/ubuntu/
 #install docker
 apt install docker.io
+docker pull jupyter/all-spark-notebook
+#run notebook
+docker run -d -p 80:8888 --name notebook jupyter/all-spark-notebook
+#connect to notebook from browser
+http://142.93.252.198?token=501a35e40b89fc6cebb1172872205569bc2caf4d0259aff6
