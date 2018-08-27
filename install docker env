@@ -18,6 +18,7 @@ apt install python-pip
 git init
 git config --global user.name "eric-hcshen"
 git config --global uer.email "eric.hcshen@gmail.com"
+git remote add origin https://github.com/eric-hcshen/unix-homework
 git remote add work https://github.com/eric-hcshen/my-repo
 git pull work master
 git checkout
