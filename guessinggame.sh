@@ -1,6 +1,10 @@
+
+function input {
+	echo "Guess the amont of file in current folder and then press Enter"
+	read guess
+}
 count=$(ls -l | grep -v ^total | wc -l)
-echo "Guess number of file in current foldor and then press Enter"
-read guess
+input
 while [[ $guess -ne $count ]]
 do
         if  [[ $guess -gt $count ]]
@@ -9,7 +13,6 @@ do
         else
                 echo "Your guess is much smaller"
         fi
-        echo "Guess number of file in current foldor and then press Enter"
-        read guess
+	input
 done
 echo "Your guess is right"
