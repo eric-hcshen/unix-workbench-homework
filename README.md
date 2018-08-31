@@ -1,6 +1,10 @@
 # Homework of Unix Workbench
-## Number Line of Code
+## Number Line fo Code 
+```
+18
+```
+## Make Date and Time
 ```
 08/31/18
-03:29:52
+10:00:01
 ```
