@@ -2,6 +2,12 @@
 function input {
 	echo "Guess the amont of file in current folder and then press Enter"
 	read guess
+	while [[ ! $guess =~ ^[0-9]*$ ]]
+	do
+		echo "You've entered invalid input. You should enter numeric value."
+		echo "Try again:"
+		read guess
+	done
 }
 count=$(ls -l | grep -v ^total | wc -l)
 input
